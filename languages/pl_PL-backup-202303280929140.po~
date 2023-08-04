@@ -1,0 +1,230 @@
+# Copyright (C) 2020 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: _s 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/_s\n"
+"Last-Translator: \n"
+"Language-Team: Polski\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-01-12 13:02+0000\n"
+"PO-Revision-Date: 2023-03-28 09:25+0000\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Domain: _s\n"
+"Language: pl_PL\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10 >= 2 && n%10<=4 "
+"&&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"X-Loco-Version: 2.6.3; wp-6.1.1"
+
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:63
+msgid ", "
+msgstr ""
+
+#: inc/functions-template.php:158
+msgid "Activities available:"
+msgstr ""
+
+#: functions.php:129
+msgid "Add widgets here."
+msgstr ""
+
+#: inc/functions-template.php:168
+msgid "Age:"
+msgstr ""
+
+#: inc/functions-template.php:218
+msgid "Booking"
+msgstr ""
+
+#: comments.php:68
+msgid "Comments are closed."
+msgstr ""
+
+#. 1: comment count number, 2: title.
+#: comments.php:41
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. Name of the template
+msgid "Contact"
+msgstr ""
+
+#: inc/functions-template.php:163
+msgid "Cost:"
+msgstr ""
+
+#. Description of the theme
+msgid "Description"
+msgstr ""
+
+#: inc/functions-template.php:148
+msgid "Digestion time:"
+msgstr ""
+
+#. Name of the template
+msgid "Donors"
+msgstr ""
+
+#: inc/functions-template.php:198
+msgid "Download:"
+msgstr ""
+
+#. %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:100 template-parts/content-page.php:38
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#. Name of the template
+msgid "Example-page"
+msgstr ""
+
+#. Name of the template
+msgid "Front page"
+msgstr ""
+
+#: functions.php:52
+msgid "Header menu"
+msgstr ""
+
+#. URI of the theme
+msgid "http://underscores.me/"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://thenewlook.pl"
+msgstr ""
+
+#: 404.php:17
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: template-parts/content-none.php:44
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#. %s: post title
+#: inc/template-tags.php:83
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:70
+msgctxt "list item separator"
+msgid ", "
+msgstr ""
+
+#. Name of the template
+msgid "My page"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#. Name of the theme
+msgid "ogrod_botaniczny"
+msgstr ""
+
+#. 1: title.
+#: comments.php:35
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#: search-custom.php:50
+msgid "Oops. Nothing found!"
+msgstr ""
+
+#: template-parts/content-page.php:24
+msgid "Pages:"
+msgstr ""
+
+#. %s: post author.
+#: inc/template-tags.php:46
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#. %s: post date.
+#: inc/template-tags.php:30
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#. 1: list of categories.
+#: inc/template-tags.php:66
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/functions-template.php:212
+msgid "Preparation:"
+msgstr ""
+
+#: functions.php:53
+msgid "Primary menu"
+msgstr ""
+
+#: functions.php:266 functions.php:271 functions.php:276 taxonomy.php:82
+#: taxonomy.php:106 inc/functions-template.php:122
+msgid "Read more"
+msgstr ""
+
+#. 1: link to WP admin new post page.
+#: template-parts/content-none.php:24
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: inc/functions-template.php:196
+msgid "Recipe:"
+msgstr ""
+
+#. Name of the template
+msgid "Search Page"
+msgstr ""
+
+#. %s: search query.
+#: search.php:21
+msgid "Search Results for: %s"
+msgstr ""
+
+#: inc/functions-template.php:153
+msgid "Seat limit:"
+msgstr ""
+
+#: functions.php:54
+msgid "Shop menu"
+msgstr ""
+
+#: functions.php:127
+msgid "Sidebar"
+msgstr ""
+
+#: template-parts/content-none.php:37
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#. 1: list of tags.
+#: inc/template-tags.php:73
+msgid "Tagged %1$s"
+msgstr ""
+
+#. Author of the theme
+msgid "THE NEW LOOK"
+msgstr ""
+
+#: header.php:74
+msgid "View your shopping cart"
+msgstr ""

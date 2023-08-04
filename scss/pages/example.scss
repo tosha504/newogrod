@@ -1,0 +1,39 @@
+.page-template-example-page, .page-template-science {
+  .breadcrumbs-nav {
+    margin-top: 30px;
+  }
+
+  .taxonomy__bottom_content {
+    *{
+      margin-bottom: 20px;
+    }
+    ul {
+      li {
+        margin-left: 20px;
+        margin-bottom: 10px;
+      }
+    }
+    p{
+      // padding: 10px 0;
+      margin-bottom: 10px;
+    }
+    li {
+      list-style: circle;
+    }
+
+    a {
+      color: $primary;
+    }
+  }
+ 
+}
+
+body {
+  &.page-template-science { 
+    .taxonomy__bottom_content {
+      p{
+        margin-bottom: 40px;  
+      }
+    }
+  }
+}

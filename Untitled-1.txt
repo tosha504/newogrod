@@ -1,0 +1,11 @@
+<div class="shop">
+  <a class="shopbagHeader" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'garden'); ?>">
+
+    <?php echo file_get_contents((get_template_directory_uri() . '/assets/img/koszyk-sushi-hero.svg')); ?>
+
+  </a>
+  <div class="shop__counter">
+    <?php global $woocommerce;
+    echo sprintf($woocommerce->cart->cart_contents_count); ?>
+  </div>
+</div>
