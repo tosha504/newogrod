@@ -34,6 +34,13 @@ $map = get_field('map', 'options');
 // NEWSLETTER
 $bag_image = get_field('bag_image', 'options');
 $settings_bg = get_field('settings_bg', 'options');
+//popup
+$popup = get_field('popup', 'options');
+$on_off = $popup['on_off'];
+$bg_image_popup = $popup['bg_image'];
+$title_popup = $popup['title'];
+$description_popup = $popup['description'];
+
 echo !is_front_page() ? newsletter_creating($bag_image, $settings_bg) : '';
 echo !is_front_page() ? schedule_creating($title_schedules, $schedules) : '';
 echo !is_front_page() ? map_creating($map)  : ''; ?>
@@ -103,6 +110,26 @@ echo !is_front_page() ? map_creating($map)  : ''; ?>
 		</div>
 	</div>
 </div><!-- cookies -->
+
+<?php if ($on_off === true) { ?>
+
+	<div class="popup" data-is-active="true">
+		<div class="overlay"></div>
+		<div class="popup__content" <?php echo 'style="background: url(' . wp_get_attachment_image_url($bg_image_popup, 'full') . '); background-repeat: no-repeat;  background-position: center; background-size: cover;"'; ?>>
+			<?php if ($title_popup) {
+				echo '<p id="title">' . $title_popup . '</p>';
+			} ?>
+			<?php if ($description_popup) {
+				echo  $description_popup;
+			} ?>
+
+			<div class="buttons">
+				<span class="">X</span>
+			</div>
+		</div>
+	</div><!-- popup -->
+<?php } ?>
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

@@ -72,7 +72,6 @@
   });
   simplepicker.readableDate = "";
   simplepicker.on("submit", function (date, readableDate) {
-    console.log(date, readableDate);
     checkValueCustomSearch();
   });
   jQuery(".custom-search__items li").on("click", function (e) {
@@ -129,6 +128,18 @@
       setCookie("popupCookie", "submited", 7);
     });
   }, 5000);
+  if (getCookie("popupCookiesInfo") != "submited" && jQuery(".popup").data("is-active") == true) {
+    body.addClass("fixed-page");
+    jQuery(".popup").fadeIn();
+  }
+  jQuery(".popup .buttons").on("click", function (e) {
+    jQuery(".popup").fadeOut();
+    body.removeClass("fixed-page");
+
+    //sets the coookie to five minutes if the popup is submited (whole numbers = days)
+
+    setCookie("popupCookiesInfo", "submited", 1);
+  });
   function getCookie(cname) {
     var name = cname + "=";
     var ca = document.cookie.split(";");

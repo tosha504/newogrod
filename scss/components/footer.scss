@@ -2,14 +2,14 @@
   background-color: #000;
   color: #fff;
   padding: 0 0 30px;
-  @media (min-width:$bp3) {
+  @media (min-width: $bp3) {
     padding: 50px 0 30px;
   }
 
   &__container {
     display: flex;
     flex-wrap: wrap;
-    @media (min-width:$bp1) {
+    @media (min-width: $bp1) {
       gap: 20px;
     }
   }
@@ -19,19 +19,20 @@
     flex: 1 1 100%;
     display: flex;
     flex-direction: column;
-    @media (min-width:$bp1) {
+    @media (min-width: $bp1) {
       flex: 1 1 45%;
     }
-    &__logo , .socials {
+    &__logo,
+    .socials {
       // min-height: 190px;
-      @media (min-width:$bp3) {
+      @media (min-width: $bp3) {
         min-height: 160px;
       }
     }
     &__logo {
       display: flex;
       align-items: center;
-      @media (max-width:$bp1) {
+      @media (max-width: $bp1) {
         flex-wrap: wrap;
       }
       &_links {
@@ -74,9 +75,9 @@
       justify-content: start;
       &__descr {
         padding: 20px 0;
-      } 
+      }
       p {
-        @include fontz(14px,7);
+        @include fontz(14px, 7);
         color: #ffffff;
         font-family: $play;
         font-weight: 300;
@@ -85,14 +86,14 @@
           font-weight: 600;
         }
       }
-      @media (max-width:$bp2) {
+      @media (max-width: $bp2) {
         order: 2;
       }
       &__items {
         display: flex;
         align-items: center;
         flex-direction: column;
-        gap: 10px ;
+        gap: 10px;
         li {
           a {
             padding: 10px;
@@ -108,7 +109,8 @@
             }
             &:hover {
               img {
-                filter: invert(99%) sepia(0%) saturate(0%) hue-rotate(171deg) brightness(106%) contrast(101%);
+                filter: invert(99%) sepia(0%) saturate(0%) hue-rotate(171deg)
+                  brightness(106%) contrast(101%);
               }
             }
           }
@@ -122,28 +124,29 @@
     flex-wrap: wrap;
     flex: 1 1 100%;
     padding: 10px 0;
-    @media (min-width:$bp3) {
+    @media (min-width: $bp3) {
       border-top: 1px solid #fff;
       border-bottom: 1px solid $white;
     }
-  
-    @media (min-width:$bp1) {
+
+    @media (min-width: $bp1) {
       flex-wrap: nowrap;
     }
 
-    @media (min-width:$bp3) {
+    @media (min-width: $bp3) {
       padding: 50px 0;
     }
 
-    &__left, &__right {
-      flex: 1 1 50%
+    &__left,
+    &__right {
+      flex: 1 1 50%;
     }
 
     &__left {
       margin-right: 50px;
       div {
         margin-bottom: 40px;
-        @media (min-width:$bp1) {
+        @media (min-width: $bp1) {
           &:not(:last-child) {
             margin-bottom: 40px;
           }
@@ -162,13 +165,14 @@
 
     &__right {
       .news {
-        background-color: #D7B322;
+        background-color: #d7b322;
         border-radius: 20px;
         padding: 20px;
         margin-top: 20px;
         color: $font;
 
-        h6,p {
+        h6,
+        p {
           padding: 20px 0;
         }
 
@@ -179,14 +183,15 @@
         p {
           font-size: 14px;
         }
-      
-        @media (min-width:$bp1) {
+
+        @media (min-width: $bp1) {
           margin-top: 0px;
         }
       }
     }
-    
-    .greenhouse, .magic {
+
+    .greenhouse,
+    .magic {
       &__title {
         margin-bottom: 10px;
       }

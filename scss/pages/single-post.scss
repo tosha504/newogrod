@@ -1,11 +1,10 @@
 .single {
-
   .title {
     padding: 25px 0;
     background-color: $cream;
 
     h1 {
-      @include fontz(20px,33);
+      @include fontz(20px, 33);
       max-width: 900px;
     }
 
@@ -19,14 +18,15 @@
         position: relative;
         font-weight: bold;
         &::before {
-          content: '';
+          content: "";
           position: absolute;
           bottom: 110%;
           width: 50px;
           height: 50px;
           left: 50%;
           transform: translateX(-50%);
-          background: url(../assets/img/number-sevings.svg) no-repeat center/cover;
+          background: url(../assets/img/number-sevings.svg) no-repeat
+            center/cover;
         }
       }
     }
@@ -37,23 +37,25 @@
       color: $white !important;
     }
   }
-  
 
   .sub-title {
     color: $primary;
     font-weight: bold;
   }
-  
+
   .content {
     font-family: $mon;
     line-height: 170%;
-    *{
-      margin-bottom: 10px;
-    }
+
     hr {
-      margin: 20px 0 ;
+      margin: 20px 0;
     }
-    h1,h2,h3,h4,h5,h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       margin: 35px 0;
     }
     ul {
@@ -67,7 +69,7 @@
       // display: flex;
       // flex-wrap: wrap;
     }
-    
+
     &__image {
       // padding: 50px 0;
       img {
@@ -79,13 +81,13 @@
     font-weight: 400;
     a {
       color: $primary;
-      @media (min-width:$bp3) {
+      @media (min-width: $bp3) {
         &:hover {
-          opacity: 0.6;   
+          opacity: 0.6;
         }
       }
     }
-    
+
     p {
       span {
         font-size: 20px;
@@ -94,26 +96,30 @@
         }
       }
     }
-    
+
     &__wrap {
+      * {
+        margin-bottom: 10px;
+      }
       display: flex;
       flex-wrap: wrap;
       margin-bottom: 50px;
     }
 
-    &__download,&__recipe {
+    &__download,
+    &__recipe {
       height: 100%;
       width: 100%;
     }
 
-    &__recipe{
+    &__recipe {
       max-width: 450px;
       &_wrap {
         color: $primary;
         padding: 40px;
         border-radius: 20px;
         border: 1px solid $primary;
-        @media (min-width:$bp2) {
+        @media (min-width: $bp2) {
           margin-right: 20px;
         }
       }
@@ -127,7 +133,6 @@
       p {
         padding: 20px 0;
       }
-
     }
 
     &__download {
@@ -138,8 +143,8 @@
       a {
         color: $font;
         &:hover {
-          opacity: 1; 
-          color: $white;  
+          opacity: 1;
+          color: $white;
         }
       }
     }
@@ -148,13 +153,13 @@
       font-size: 30px;
       font-family: $play;
     }
-    
+
     &__text {
       padding: 20px 0;
-      @media (min-width:$bp3) {
+      @media (min-width: $bp3) {
         max-width: 40vw;
         width: 100%;
-        margin-left: auto; 
+        margin-left: auto;
         // padding: 0;
       }
       &_preparation {
@@ -187,8 +192,8 @@
 
   .support {
     padding: 25px 15px;
-    @media (min-width:$bp2) {
-      padding: 25px 0 50px;      
+    @media (min-width: $bp2) {
+      padding: 25px 0 50px;
     }
     background-color: $cream;
     border-radius: 8px;
@@ -201,12 +206,12 @@
 
       h4 {
         @include fontz(20px, 15);
-          margin: 25px 0;
+        margin: 25px 0;
       }
 
       p {
         margin-bottom: 25px;
-        @media (min-width:$bp2) {
+        @media (min-width: $bp2) {
           margin-bottom: 50px;
         }
       }
@@ -221,7 +226,7 @@
   .post-card {
     h4 {
       text-align: center;
-      @include fontz(20px,10);
+      @include fontz(20px, 10);
       margin: 35px 0;
     }
 

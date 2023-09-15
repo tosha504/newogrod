@@ -51,7 +51,6 @@ $query = new WP_Query($post_types);
 
       while ($query->have_posts()) {
         $query->the_post();
-
         echo create_blog_card(get_the_ID(), get_the_title(), get_the_excerpt(), $term_for_custom_page); ?>
 
     <?php
